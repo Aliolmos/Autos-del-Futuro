@@ -1,242 +1,188 @@
+/* ===== GENERAL ===== */
+
 *{
-    margin:0; /* Elimina el margen externo de todos los elementos */
-    padding:0; /* Elimina el espacio interno de todos los elementos */
-    box-sizing:border-box; /* Hace que el padding y border no aumenten el tamaño total */
-    font-family:'Orbitron', sans-serif; /* Define la tipografia principal */
+    margin:0; /* Quita margenes */
+    padding:0; /* Quita espacios internos */
+    box-sizing:border-box; /* Mantiene tamaños correctos */
+    font-family:'Orbitron', sans-serif; /* Tipografia general */
 }
 
 body{
-    background:#050816; /* Color de fondo de toda la pagina */
-    color:white; /* Color del texto */
-    overflow-x:hidden; /* Evita el scroll horizontal */
+    background:#0d122e; /* el fondo en todos los apartados*/
+    color:rgb(225, 231, 232); /* Color de texto en todos lados*/
 }
 
 /* ===== LOGIN ===== */
 
 #loginScreen{
-    position:fixed; /* Mantiene la pantalla fija */
-    width:100%; /* Ocupa todo el ancho */
-    height:100vh; /* Ocupa toda la altura de la ventana */
+    width:100%; /* Ocupa toda la pantalla */
+    height:100vh; /* Alto completo */
+    display:flex; /* Centra contenido */
+    justify-content:center; /* Centra horizontal */
+    align-items:center; /* Centra vertical */
     background:#050816; /* Fondo oscuro */
-    display:flex; /* Usa flexbox */
-    justify-content:center; /* Centra horizontalmente */
-    align-items:center; /* Centra verticalmente */
-    z-index:9999; /* Lo pone por encima de todo */
 }
 
-.login-box{
-    width:400px; /* Ancho del cuadro */
-    padding:40px; /* Espacio interno */
-    border-radius:20px; /* Bordes redondeados */
-    background:rgba(255,255,255,.05); /* Fondo transparente */
-    border:1px solid #00e5ff44; /* Borde celeste transparente */
-    backdrop-filter:blur(20px); /* Efecto vidrio */
-    box-shadow:0 0 40px #00e5ff22; /* Brillo exterior */
+.login-box{ /*cuadradito de login*/
+    width:350px; /* Ancho caja */
+    padding:30px; /* Espacio interno */
+    background:#1a263e; /* Fondo de la caja de bienvenido(cuadradito)*/
+    border-radius:15px; /* Bordes redondos */
 }
 
 .login-box h1{
-    text-align:center; /* Centra el texto */
-    margin-bottom:30px; /* Espacio inferior */
-    color:#00e5ff; /* Color del titulo */
-    text-shadow:0 0 20px #00e5ff; /* Efecto brillo */
+    text-align:center; /* Centra titulo */
+    margin-bottom:20px; /* Espacio abajo */
+    color:#f7fafb; /* Color titulo "bienvenido" */
 }
 
 /* ===== INPUTS ===== */
 
 input,
 select{
-    width:100%; /* Ocupa todo el ancho */
-    padding:15px; /* Espacio interno */
-    margin:12px 0; /* Espacio arriba y abajo */
+    width:100%; /* Ocupan todo el ancho */
+    padding:12px; /* Espacio interno */
+    margin:10px 0; /* Espacio entre elementos */
     border:none; /* Sin borde */
-    border-radius:10px; /* Bordes redondeados */
-    background:#111827; /* Fondo oscuro */
-    color:white; /* Texto blanco */
-    outline:none; /* Quita el borde azul al seleccionar */
+    border-radius:8px; /* Bordes redondos */
+    background:#30425f; /* Fondo de usuario y contraseña */
+    color:rgb(0, 231, 243); /* texto que se muestra cuando escribis en login */
 }
 
 label{
-    color:#94a3b8; /* Color gris claro */
-    font-size:14px; /* Tamaño del texto */
+    font-size:14px; /* Tamaño texto */
 }
 
-/* ===== BUTTON ===== */
+/* ===== BOTON ===== */
 
 button{
-    width:100%; /* Ocupa todo el ancho */
-    padding:15px; /* Espacio interno */
+    width:100%; /* Todo el ancho */
+    padding:12px; /* Espacio interno */
     border:none; /* Sin borde */
-    border-radius:10px; /* Bordes redondeados */
-    background:#00e5ff; /* Fondo celeste */
-    color:black; /* Texto negro */
-    font-weight:bold; /* Texto en negrita */
-    cursor:pointer; /* Cambia el cursor a mano */
-    transition:.3s; /* Animacion suave */
+    border-radius:8px; /* Bordes redondos */
+    background:#46c2ba; /* Fondo celeste del boton "ingresar al futuro" */
+    color:rgb(14, 14, 14); /* Texto negro del boton "ingresar al futuro" */
+    font-weight:bold; /* Negrita */
+    cursor:pointer; /* Cursor mano */
     margin-top:10px; /* Espacio arriba */
 }
 
 button:hover{
-    transform:scale(1.03); /* Agranda un poco el boton */
-    box-shadow:0 0 20px #00e5ff; /* Agrega brillo */
+    background:#00f7ff; /* Cambia color cuando pasas el mouse por encima del boton "ingresar al futuro " */
 }
 
 /* ===== NAV ===== */
 
 nav{
-    width:100%; /* Ocupa todo el ancho */
-    padding:20px 50px; /* Espacio interno */
-    display:flex; /* Usa flexbox */
-    justify-content:space-between; /* Separa elementos */
-    align-items:center; /* Centra verticalmente */
-    background:#02040d; /* Fondo oscuro */
-    position:sticky; /* Queda pegado arriba */
-    top:0; /* Se pega arriba */
-    z-index:1000; /* Prioridad alta */
-    border-bottom:1px solid #00e5ff22; /* Linea inferior */
+    display:flex; /* Elementos en fila */
+    justify-content:space-between; /* Separa contenido */
+    align-items:center; /* Centra vertical */
+    padding:20px; /* Espacio interno */
+    background:#03264c; /* Fondo de la barra de arriba del todo*/
 }
 
 .logo{
-    font-size:30px; /* Tamaño del logo */
-    color:#00e5ff; /* Color celeste */
-    font-weight:800; /* Muy grueso */
-    text-shadow:0 0 20px #00e5ff; /* Brillo */
+    font-size:19px; /* Tamaño logo "un viaje al futuro" */
+    color:#00e5ff; /* Color logo */
 }
 
 nav ul{
-    display:flex; /* Pone los items en fila */
-    gap:30px; /* Espacio entre items */
-    list-style:none; /* Quita los puntos */
+    display:flex; /* Lista horizontal */
+    gap:20px; /* Espacio entre links */
+    list-style:none; /* Sin puntos */
 }
 
 nav a{
-    color:white; /* Color del texto */
-    text-decoration:none; /* Quita el subrayado */
-    transition:.3s; /* Animacion suave */
+    color:rgba(245, 250, 250, 0.697); /* Color de  palabra inicio, catalogo,etc */
+    text-decoration:none; /* Sin subrayado */
 }
 
-nav a:hover{
-    color:#00e5ff; /* Cambia a celeste al pasar el mouse */
-}
-
-/* ===== SECTIONS ===== */
+/* ===== SECCIONES ===== */
 
 .section{
-    display:none; /* Oculta las secciones */
-    padding:80px 10%; /* Espacio interno */
-    min-height:100vh; /* Altura minima de pantalla completa */
+    display:none; /* Oculta secciones */
+    padding:60px 10%; /* Espacio interno */
 }
 
 .active{
-    display:block; /* Muestra la seccion activa */
+    display:block; /* Muestra seccion */
 }
 
 .title{
-    font-size:50px; /* Tamaño del titulo */
-    margin-bottom:40px; /* Espacio abajo */
-    color:#00e5ff; /* Color celeste */
-    text-shadow:0 0 20px #00e5ff; /* Brillo */
+    font-size:40px; /* Tamaño titulo */
+    margin-bottom:30px; /* Espacio abajo */
+    color:#00aaffb0; /* Color titulo en cada apartado (catalogo, video,etc) */
 }
 
 /* ===== HERO ===== */
 
 .hero{
     text-align:center; /* Centra contenido */
-    margin-top:100px; /* Espacio arriba */
+    margin-top:80px; /* Espacio arriba */
 }
 
 .hero h1{
-    font-size:90px; /* Tamaño gigante */
-    text-shadow:0 0 30px #00e5ff; /* Brillo */
+    font-size:70px; /* Tamaño titulo */
 }
 
 .hero p{
-    margin-top:20px; /* Espacio arriba */
-    font-size:22px; /* Tamaño del texto */
-    color:#cbd5e1; /* Color gris claro */
+    margin-top:15px; /* Espacio arriba */
+    font-size:20px; /* Tamaño texto */
 }
 
 /* ===== CARDS ===== */
 
 .cards{
-    display:grid; /* Usa grid */
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); /* Columnas responsivas */
-    gap:30px; /* Espacio entre cards */
+    display:grid; /* Grid */
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); /* Responsive */
+    gap:20px; /* Espacio */
 }
 
 .card{
-    background:rgba(255,255,255,.05); /* Fondo transparente */
-    border-radius:20px; /* Bordes redondeados */
-    overflow:hidden; /* Oculta contenido sobrante */
-    transition:.4s; /* Animacion suave */
-    border:1px solid #00e5ff22; /* Borde celeste */
-}
-
-.card:hover{
-    transform:translateY(-10px); /* Levanta la card */
-    box-shadow:0 0 30px #00e5ff55; /* Brillo */
+    background:#1e225e60; /* Fondo de los cuadrados en la parte de catalogo */
+    border-radius:23px; /* Bordes redondos */
+    overflow:hidden; /* Oculta sobrante */
 }
 
 .card img{
-    width:100%; /* Imagen ocupa todo el ancho */
-    height:220px; /* Altura fija */
-    object-fit:cover; /* Ajusta la imagen */
+    width:100%; /* Imagen completa */
+    height:200px; /* Altura */
+    object-fit:cover; /* Ajusta imagen */
 }
 
 .card-content{
     padding:20px; /* Espacio interno */
 }
 
-.card-content h2{
-    margin-bottom:10px; /* Espacio debajo del titulo */
-}
-
 /* ===== VIDEO ===== */
 
-iframe{
-    width:100%; /* Ocupa todo el ancho */
-    height:500px; /* Altura fija */
+iframe{ /*editor del video*/
+    width:100%; /* Todo el ancho */
+    height:500px; /* Alto */
     border:none; /* Sin borde */
-    border-radius:20px; /* Bordes redondeados */
-    box-shadow:0 0 30px #00e5ff44; /* Brillo */
+    border-radius:15px; /* Bordes redondos */
 }
 
 /* ===== BOX ===== */
 
 .quote-box{
-    max-width:650px; /* Ancho maximo */
-    background:rgba(255,255,255,.05); /* Fondo transparente */
-    padding:40px; /* Espacio interno */
-    border-radius:20px; /* Bordes redondeados */
-    border:1px solid #00e5ff22; /* Borde celeste */
+    background:#1d273e; /* Fondo de la caja de cotizador */
+    padding:30px; /* Espacio interno */
+    border-radius:15px; /* Bordes redondos */
 }
 
 /* ===== RESULT ===== */
 
 .result{
     margin-top:20px; /* Espacio arriba */
-    font-size:35px; /* Texto grande */
-    color:#00e5ff; /* Color celeste */
-}
-
-/* ===== GLOW ===== */
-
-.glow{
-    position:fixed; /* Posicion fija */
-    width:700px; /* Ancho */
-    height:700px; /* Alto */
-    background:#00e5ff22; /* Fondo celeste transparente */
-    border-radius:50%; /* Forma circular */
-    filter:blur(120px); /* Desenfoque */
-    top:-200px; /* Posicion arriba */
-    right:-200px; /* Posicion derecha */
-    z-index:-1; /* Lo manda al fondo */
+    font-size:30px; /* Tamaño texto */
+    color:#00e1ff; /* Texto de total de creditos en cotizador */
 }
 
 /* ===== FOOTER ===== */
 
 footer{
-    text-align:center; /* Centra el texto */
-    padding:30px; /* Espacio interno */
-    background:#02040d; /* Fondo oscuro */
-    border-top:1px solid #00e5ff22; /* Linea superior */
+    text-align:center; /* Centra texto */
+    padding:20px; /* Espacio interno */
+    background:#075e5000; /* Fondo de la parte de copyright */
 }
