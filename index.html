@@ -4,221 +4,217 @@
 <meta charset="UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-<title>Tienda - Autos Futuristas</title> <!-- Título que aparece en la pestaña arriba del todo -->
+<title>Tienda - Autos Futuristas</title> 
 
-<link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Conecta con Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet"> <!-- Descarga la fuente Orbitron -->
-<link rel="stylesheet" href="style.css"> <!-- Enlaza el archivo CSS para estilos -->
-<script src="script.js"></script> <!-- Enlaza el archivo JavaScript para funcionalidad -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="style.css"> 
+<script src="script.js"></script> 
 
 </head> 
-<body> <!-- abre el cuerpo de toda la pagina completa -->
+<body> 
 
 
 
 
-<div id="loginScreen"> <!-- Contenedor principal del login -->
+<div id="loginScreen"> 
 
-<div class="login-box"> <!-- Div que contiene la caja del formulario de login -->
+<div class="login-box"> 
 
-    <h1>Bienvenido</h1> <!-- Título grande en la caja de loginn: "bienvenido al limalayaa" -->
+    <h1>Bienvenido</h1> 
 
-    <input type="text" id="user" placeholder="Usuario"> <!-- el input te permite colocar informacion y en este caso es donde se pone usuario-->
+    <input type="text" id="user" placeholder="Usuario"> 
 
-    <input type="password" id="pass" placeholder="Contraseña"> <!-- donde pones la contraseña pero que no se ve -->
+    <input type="password" id="pass" placeholder="Contraseña"> 
 
-    <button onclick="login()"> INGRESAR AL FUTURO </button> <!-- Botón que ejecuta la función login() q esta en el js -->
+    <button onclick="login()"> INGRESAR AL FUTURO </button> 
 
-        <br><br> <!-- Hace que haya un espacio q se llama salto de linea -->
+        <br><br> 
 
-        <p style="text-align:center;color:#f2f4f621;"> Usuario: admin | Contraseña: 1234 </p> <!-- Párrafo que aparece debajo para que el usuario sepa usuario y contra -->
+        <p style="text-align:center;color:#f2f4f621;"> Usuario: admin | Contraseña: 1234 </p> 
 
-    </div> <!-- Cierra div de la clase login-box -->
+    </div>
 
-</div> <!-- Cierra div de la clase loginScreen -->
-
-
-<div id="website" style="display:none;"> <!-- Div principal del sitio (oculto al inicio, se muestra después de login) -->
-<nav> <!-- Abre la barra de navegación -->
-<div class="logo">UN VIAJE AL FUTURO</div> <!-- Logo del sitio: "viaje al futuroo" -->
-<ul> <!-- Abre lista desordenada (menú) -->
-<li> <!-- Elemento de lista -->
-<a href="#" onclick="showSection('inicio')"> Inicio </a> <!-- Enlace que muestra la sección "inicio" al hacer click -->
-</li> <!-- Cierra elemento de lista -->
+</div> 
 
 
-<li> <!-- Elemento de lista -->
-<a href="#" onclick="showSection('catalogo')"> Catálogo </a> <!-- Enlace que muestra la sección "catalogo" -->
-</li> <!-- Cierra elemento de lista -->
+<div id="website" style="display:none;"> 
+<div class="logo">UN VIAJE AL FUTURO</div> 
+<ul> 
+<li> 
+<a href="#" onclick="showSection('inicio')"> Inicio </a> 
+</li> 
 
 
 <li> <!-- Elemento de lista -->
-<a href="#" onclick="showSection('video')"> Video </a> <!-- Enlace que muestra la sección "video" -->
-</li> <!-- Cierra elemento de lista -->
+<a href="#" onclick="showSection('catalogo')"> Catálogo </a> 
+</li>
 
 
 <li> <!-- Elemento de lista -->
-<a href="#" onclick="showSection('mapa')"> Mapa </a> <!-- Enlace que muestra la sección "mapa" -->
-</li> <!-- Cierra elemento de lista -->
+<a href="#" onclick="showSection('video')"> Video </a> 
+</li> 
 
 
 <li> <!-- Elemento de lista -->
-<a href="#" onclick="showSection('registro')"> Registro </a> <!-- Enlace que muestra la sección "registro" -->
-</li> <!-- Cierra elemento de lista -->
+<a href="#" onclick="showSection('mapa')"> Mapa </a> 
+</li> 
 
 
 <li> <!-- Elemento de lista -->
-<a href="#" onclick="showSection('cotizador')"> Cotizador </a> <!-- Enlace que muestra la sección "cotizador" -->
-</li> <!-- Cierra elemento de lista -->
+<a href="#" onclick="showSection('registro')"> Registro </a> 
+</li> 
+
+
+<li> 
+<a href="#" onclick="showSection('cotizador')"> Cotizador </a> 
+</li> 
 
 
 
 
-</ul> <!-- Cierra la lista del menú -->
-</nav> <!-- Cierra la barra de navegación -->
+</ul>
+</nav> 
 
 
-<section id="inicio" class="section active"> <!-- Sección visible por defecto (active) con id "inicio" -->
-<div class="hero"> <!-- Div para la sección principal con efecto heroico -->
-<h1>VENTA DE AUTOS DEL FUTURO</h1> <!-- Título grande: "venta de autos del futuro anashee" -->
-<p> Vehículos super tecnologicos creados para dominar el mundo wuajaja. </p> <!-- Párrafo que esta debajo del titulo -->
-</div> <!-- Cierra div hero -->
-</section> <!-- Cierra sección inicio -->
+<section id="inicio" class="section active"> 
+<div class="hero"> 
+<h1>VENTA DE AUTOS DEL FUTURO</h1> 
+<p> Vehículos super tecnologicos creados para dominar el mundo wuajaja. </p> 
+</div> 
+</section> 
 
-<!-- Comentario: sección del catálogo de vehículos -->
 
-<section id="catalogo" class="section"> <!-- Sección con id "catalogo" -->
 
-<h1 class="title">Catalogo Futurista</h1> <!-- Título: "Catálogo" -->
-<div class="cards"> <!-- Div contenedor para las tarjetas de productos -->
-<div class="card"> <!-- Primera tarjeta de producto -->
+<section id="catalogo" class="section"> 
 
-<img src="auto futuro.png"> <!-- Imagen del vehículo Phantom GT -->
+<h1 class="title">Catalogo Futurista</h1>
+<div class="cards"> 
+<div class="card">
 
-<div class="card-content"> <!-- Div con contenido de la tarjeta -->
-<h2>Phantom GT</h2> <!-- Nombre del vehículo -->
-<p> Motor cuántico y navegación IA avanzada. </p> <!-- Descripción del vehículo -->
-</div> <!-- Cierra card-content -->
-</div> <!-- Cierra primera tarjeta -->
+<img src="auto futuro.png"> 
 
-<div class="card"> <!-- Segunda tarjeta de producto -->
+<div class="card-content"> 
+<h2>Phantom GT</h2> 
+<p> Motor cuántico y navegación IA avanzada. </p> 
+</div> 
+</div> 
 
-<img src="auto antigravedad.png"> <!-- Imagen del vehículo NX-900 -->
-<div class="card-content"> <!-- Div con contenido de la tarjeta -->
-<h2>NX-900</h2> <!-- Nombre del vehículo -->
-<p> Modelo urbano anti-gravedad. </p> <!-- Descripción del vehículo -->
-</div> <!-- Cierra card-content -->
-</div> <!-- Cierra segunda tarjeta -->
+<div class="card">
 
-<div class="card"> <!-- Tercera tarjeta de producto -->
+<img src="auto antigravedad.png"> 
+<div class="card-content"> 
+<h2>NX-900</h2> 
+<p> Modelo urbano anti-gravedad. </p> 
+</div> 
+</div> 
 
-<img src="blindaje.png"> <!-- Imagen del vehículo Raven X -->
-<div class="card-content"> <!-- Div con contenido de la tarjeta -->
-<h2>Raven X</h2> <!-- Nombre del vehículo -->
-<p> Blindaje militar y turbo HyperDrive. </p> <!-- Descripción del vehículo -->
-</div> <!-- Cierra card-content -->
-</div> <!-- Cierra tercera tarjeta -->
+<div class="card"> 
 
-<div class="card"> <!-- Segunda tarjeta de producto -->
+<img src="blindaje.png"> 
+<div class="card-content"> 
+<h2>Raven X</h2> 
+<p> Blindaje militar y turbo HyperDrive. </p> 
+</div> 
+</div> 
 
-<img src="motitoo.png"> <!-- Imagen de la motitoo -->
-<div class="card-content"> <!-- Div con contenido de la tarjeta -->
-<h2>VOLADOR 2000</h2> <!-- Nombre del vehículo -->
-<p> Modelo urbano anti-gravedad. </p> <!-- Descripción del vehículo -->
-</div> <!-- Cierra card-content -->
-</div> <!-- Cierra segunda tarjeta -->
-</div> <!-- Cierra div cards -->
-</section> <!-- Cierra sección catalogo -->
+<div class="card"> 
 
-<!-- VIDEO --> <!-- Comentario: sección de video -->
+<img src="motitoo.png"> 
+<div class="card-content">
+<h2>VOLADOR 2000</h2> 
+<p> Modelo urbano anti-gravedad. </p> 
+</div> 
+</div> 
+</div> 
+</section> 
 
-<section id="video" class="section"> <!-- Sección con id "video" -->
 
-<h1 class="title">Video del proximo vehiculo futurista: Volator 3000</h1> <!-- Título: "Video" -->
 
-<iframe src="https://www.youtube.com/embed/_wFYGYE-xLI?si=AeFHX2JB7YUaDGuD" allowfullscreen> </iframe> <!-- Incrusta un video de YouTube (permite pantalla completa) -->
+<section id="video" class="section"> 
 
-</section> <!-- Cierra sección video -->
+<h1 class="title">Video del proximo vehiculo futurista: Volator 3000</h1>
 
-<!-- MAPA --> <!-- Comentario: sección del mapa -->
+<iframe src="https://www.youtube.com/embed/_wFYGYE-xLI?si=AeFHX2JB7YUaDGuD" allowfullscreen> </iframe> 
 
-<section id="mapa" class="section"> <!-- Sección con id "mapa" -->
-<h1 class="title">Donde estamos?</h1> <!-- Título: "Mapa" -->
+</section> 
+
+
+
+<section id="mapa" class="section"> 
+<h1 class="title">Donde estamos?</h1>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27829331.36652975!2d115.67639315088857!3d31.630149054385317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2zSmFww7Nu!5e0!3m2!1ses-419!2sar!4v1779243676172!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section> <!-- Cierra sección mapa -->
-
-<!-- REGISTRO --> <!-- Comentario: sección de registro de usuarios -->
-
-<section id="registro" class="section"> <!-- Sección con id "registro" -->
-<h1 class="title">Registro</h1> <!-- Título: "Registro" -->
-<div class="quote-box"> <!-- Div contenedor del formulario -->
-<input type="text" placeholder="Nombre y apellido Completo"> <!-- Campo de texto para nombre completo -->
-<input type="email" placeholder="Correo Electrónico"> <!-- Campo de email -->
-<label> Fecha de nacimiento </label> <!-- Etiqueta para el campo de fecha -->
-<input type="date"> <!-- Campo de fecha (muestra calendario) -->
-<input type="number" placeholder="Edad" min="1" max="120"> <!-- Campo de número para edad (mínimo 1, máximo 120) -->
-<select> <!-- Menú desplegable para seleccionar género -->
-<option disabled selected> Selecciona tu género </option> <!-- Opción deshabilitada por defecto -->
-<option> Poder femenino </option> <!-- Opción: Femenino -->
-<option> Poder masculino </option> <!-- Opción: Masculino -->
+</section> 
 
 
-</select> <!-- Cierra el menú de género -->
+
+<section id="registro" class="section">
+<h1 class="title">Registro</h1>
+<div class="quote-box"> 
+<input type="text" placeholder="Nombre y apellido Completo"> 
+<input type="email" placeholder="Correo Electrónico"> 
+<label> Fecha de nacimiento </label> 
+<input type="date"> 
+<input type="number" placeholder="Edad" min="1" max="120"> 
+<select> 
+<option disabled selected> Selecciona tu género </option> 
+<option> Poder femenino </option> 
+<option> Poder masculino </option> 
 
 
-<button onclick="registrar()"> REGISTRARSE HACIA EL FUTURO </button> <!-- Botón que ejecuta la función registrar() -->
-</div> <!-- Cierra div quote-box -->
-</section> <!-- Cierra sección registro -->
-
-<!-- COTIZADOR --> <!-- Comentario: sección del cotizador de precios -->
-
-<section id="cotizador" class="section"> <!-- Sección con id "cotizador" -->
-<h1 class="title">Cotizador</h1> <!-- Título: "Cotizador" -->
-<div class="quote-box"> <!-- Div contenedor del formulario -->
-
-<select id="vehiculo"> <!-- Menú desplegable para seleccionar vehículo -->
-<option value="50000"> NX-900 </option> <!-- Opción: NX-900 con precio base 50000 -->
-<option value="90000"> Phantom GT </option> <!-- Opción: Phantom GT con precio base 90000 -->
-<option value="140000"> Raven X </option> <!-- Opción: Raven X con precio base 140000 -->
-<option value="30000"> Volator 2000 </option> <!-- Opción: Volator 2000 con precio base 30000 -->
-</select> <!-- Cierra menú de vehículos -->
+</select> 
 
 
-<select id="motor"> <!-- Menú desplegable para seleccionar motor -->
+<button onclick="registrar()"> REGISTRARSE HACIA EL FUTURO </button> 
+</div>
+</section> 
 
-<option value="10000"> Motor Básico </option> <!-- Opción: Motor Básico, costo adicional 10000 -->
-<option value="25000"> Motor Quantum </option> <!-- Opción: Motor Quantum, costo adicional 25000 -->
-<option value="50000"> HyperDrive </option> <!-- Opción: HyperDrive, costo adicional 50000 -->
+
+
+<section id="cotizador" class="section">
+<h1 class="title">Cotizador</h1> 
+<div class="quote-box"> 
+
+<select id="vehiculo"> 
+<option value="50000"> NX-900 </option> 
+<option value="90000"> Phantom GT </option> 
+<option value="140000"> Raven X </option>
+<option value="30000"> Volator 2000 </option> 
+</select> 
+
+
+<select id="motor"> 
+
+<option value="10000"> Motor Básico </option> 
+<option value="25000"> Motor Quantum </option>
+<option value="50000"> HyperDrive </option> 
 
 </select> <!-- Cierra menú de motores -->
 
 
 
-<select id="ia"> <!-- Menú desplegable para seleccionar tipo de IA -->
+<select id="ia"> 
 
-<option value="5000"> IA Básica </option> <!-- Opción: IA Básica, costo adicional 5000 -->
-<option value="15000"> IA Avanzada </option> <!-- Opción: IA Avanzada, costo adicional 15000 -->
-<option value="30000"> IA Militar </option> <!-- Opción: IA Militar, costo adicional 30000 -->
+<option value="5000"> IA Básica </option> 
+<option value="15000"> IA Avanzada </option> 
+<option value="30000"> IA Militar </option> 
 
-</select> <!-- Cierra menú de IA -->
+</select> 
 
 
-<button onclick="cotizar()"> CALCULAR </button> <!-- Botón que ejecuta la función cotizar() para calcular el precio total -->
+<button onclick="cotizar()"> CALCULAR </button> 
 
-<div class="result" id="resultado"> <!-- Div donde se muestra el resultado de la cotización -->
+<div class="result" id="resultado"> 
 
-Total: 0 créditos <!-- Texto inicial del resultado -->
 
-</div> <!-- Cierra div resultado -->
 
-</div> <!-- Cierra div quote-box -->
+</div> 
+</div> 
+</section> 
 
-</section> <!-- Cierra sección cotizador -->
 
-<!-- FOOTER --> <!-- Comentario: pie de página -->
+<footer> © 2026 autos futuristas — Todos los derechos reservados para patio olmos. </footer> 
 
-<footer> © 2026 autos futuristas — Todos los derechos reservados para patio olmos. </footer> <!-- Pie de página con copyright y año futurista -->
-
-</div> <!-- Cierra div website -->
-</body> <!-- Cierra el cuerpo de la página -->
-</html> <!-- Cierra el documento HTML -->
+</div> 
+</body> 
+</html> 
