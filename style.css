@@ -182,6 +182,7 @@ iframe{ /*editor del video*/
 /* ===== FOOTER ===== */
 
 footer{
+    margin-top:160px; /* Espacio arriba */
     text-align:center; /* Centra texto */
     padding:20px; /* Espacio interno */
     background:#075e5000; /* Fondo de la parte de copyright */

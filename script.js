@@ -6,7 +6,7 @@ function login(){ // funcion para iniciar sesion
     let pass = document.getElementById("pass").value; //obtiene el valor por escrito en el input con id "pass"
 
     if(user === "admin" && pass === "1234"){ // para verificar si el usuario y contraseña son correctos
-
+ 
         document.getElementById("loginScreen").style.display = "none"; //oculta la pantalla de inicio
 
         document.getElementById("website").style.display = "block"; //muestra la pagina principal

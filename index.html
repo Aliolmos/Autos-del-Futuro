@@ -1,42 +1,41 @@
-<!DOCTYPE html> <!-- Declara que es un documento HTML5 -->
-<html lang="es"> <!-- Abre el documento HTML con idioma español -->
-<head> <!-- Sección de metadatos y configuración (no se ve en pantalla) -->
+<!DOCTYPE html>
+<html lang="es"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-<meta charset="UTF-8"> <!-- Define que usa caracteres UTF-8 (acentos, ñ, etc) -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adapta la página a celulares -->
-
-<title>Tienda - Autos Futuristas</title> <!-- Título que aparece en la pestaña del navegador -->
+<title>Tienda - Autos Futuristas</title> <!-- Título que aparece en la pestaña arriba del todo -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Conecta con Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet"> <!-- Descarga la fuente Orbitron -->
 <link rel="stylesheet" href="style.css"> <!-- Enlaza el archivo CSS para estilos -->
 <script src="script.js"></script> <!-- Enlaza el archivo JavaScript para funcionalidad -->
 
-</head> <!-- Cierra la sección de metadatos -->
-<body> <!-- Abre el cuerpo de la página (contenido visible) -->
-<div class="glow"></div> <!-- Div que crea un efecto de brillo/resplandor -->
+</head> 
+<body> <!-- abre el cuerpo de toda la pagina completa -->
 
 
 
-<div id="loginScreen"> <!-- Div contenedor principal del login -->
+
+<div id="loginScreen"> <!-- Contenedor principal del login -->
 
 <div class="login-box"> <!-- Div que contiene la caja del formulario de login -->
 
-    <h1>Bienvenido</h1> <!-- Título grande: "bienvenido al limalayaa" -->
+    <h1>Bienvenido</h1> <!-- Título grande en la caja de loginn: "bienvenido al limalayaa" -->
 
-    <input type="text" id="user" placeholder="Usuario"> <!-- donde se pone usuario-->
+    <input type="text" id="user" placeholder="Usuario"> <!-- el input te permite colocar informacion y en este caso es donde se pone usuario-->
 
     <input type="password" id="pass" placeholder="Contraseña"> <!-- donde pones la contraseña pero que no se ve -->
 
-    <button onclick="login()"> INGRESAR AL FUTURO </button> <!-- Botón que ejecuta la función login() -->
+    <button onclick="login()"> INGRESAR AL FUTURO </button> <!-- Botón que ejecuta la función login() q esta en el js -->
 
         <br><br> <!-- Hace que haya un espacio q se llama salto de linea -->
 
-        <p style="text-align:center;color:#f2f4f621;"> Usuario: admin | Contraseña: 1234 </p> <!-- Párrafo con credenciales de prueba, centrado y color gris azulado -->
+        <p style="text-align:center;color:#f2f4f621;"> Usuario: admin | Contraseña: 1234 </p> <!-- Párrafo que aparece debajo para que el usuario sepa usuario y contra -->
 
-    </div> <!-- Cierra div login-box -->
+    </div> <!-- Cierra div de la clase login-box -->
 
-</div> <!-- Cierra div loginScreen -->
+</div> <!-- Cierra div de la clase loginScreen -->
 
 
 <div id="website" style="display:none;"> <!-- Div principal del sitio (oculto al inicio, se muestra después de login) -->
@@ -73,6 +72,8 @@
 </li> <!-- Cierra elemento de lista -->
 
 
+
+
 </ul> <!-- Cierra la lista del menú -->
 </nav> <!-- Cierra la barra de navegación -->
 
@@ -80,7 +81,7 @@
 <section id="inicio" class="section active"> <!-- Sección visible por defecto (active) con id "inicio" -->
 <div class="hero"> <!-- Div para la sección principal con efecto heroico -->
 <h1>VENTA DE AUTOS DEL FUTURO</h1> <!-- Título grande: "venta de autos del futuro anashee" -->
-<p> Vehículos super tecnologicos creados para dominar el mundo wuajaja. </p> <!-- Párrafo con descripción de la empresa -->
+<p> Vehículos super tecnologicos creados para dominar el mundo wuajaja. </p> <!-- Párrafo que esta debajo del titulo -->
 </div> <!-- Cierra div hero -->
 </section> <!-- Cierra sección inicio -->
 
@@ -129,10 +130,6 @@
 </div> <!-- Cierra div cards -->
 </section> <!-- Cierra sección catalogo -->
 
-
-
-
-
 <!-- VIDEO --> <!-- Comentario: sección de video -->
 
 <section id="video" class="section"> <!-- Sección con id "video" -->
@@ -178,10 +175,12 @@
 <section id="cotizador" class="section"> <!-- Sección con id "cotizador" -->
 <h1 class="title">Cotizador</h1> <!-- Título: "Cotizador" -->
 <div class="quote-box"> <!-- Div contenedor del formulario -->
+
 <select id="vehiculo"> <!-- Menú desplegable para seleccionar vehículo -->
 <option value="50000"> NX-900 </option> <!-- Opción: NX-900 con precio base 50000 -->
 <option value="90000"> Phantom GT </option> <!-- Opción: Phantom GT con precio base 90000 -->
 <option value="140000"> Raven X </option> <!-- Opción: Raven X con precio base 140000 -->
+<option value="30000"> Volator 2000 </option> <!-- Opción: Volator 2000 con precio base 30000 -->
 </select> <!-- Cierra menú de vehículos -->
 
 
@@ -218,7 +217,7 @@ Total: 0 créditos <!-- Texto inicial del resultado -->
 
 <!-- FOOTER --> <!-- Comentario: pie de página -->
 
-<footer> © 2096 Aether Motors — Todos los derechos reservados. </footer> <!-- Pie de página con copyright y año futurista -->
+<footer> © 2026 autos futuristas — Todos los derechos reservados para patio olmos. </footer> <!-- Pie de página con copyright y año futurista -->
 
 </div> <!-- Cierra div website -->
 </body> <!-- Cierra el cuerpo de la página -->
